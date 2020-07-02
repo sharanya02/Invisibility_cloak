@@ -1,5 +1,6 @@
 # Invisibility_cloak
-### Turn any red coloured cloth into an invisible cloak with OpenCV!
+### Turn any solid coloured cloth into an invisible cloak with OpenCV!
+#### Here the HSV values for the colours blue and red are given, so you can use a blue or red coloured cloth depending on the values you choose.For any other colour, just change the HSV colour accordingly.
 
 ### Pre requisites: 
 - Python 3 installed.
