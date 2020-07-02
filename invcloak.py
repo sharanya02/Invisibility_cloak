@@ -17,9 +17,14 @@ while(cap.isOpened()):
     blurred = cv2.GaussianBlur(hsv, value,0)
     lower_red = np.array([0,120,50])
     upper_red = np.array([10,255,255])
+    #use the value given below to turn any blue cloth into the invisibility cloak
+     #lower_blue = np.array([101,50,38])
+   # upper_blue = np.array([110,255,255])
     mask1 = cv2.inRange(hsv,lower_red,upper_red)
     lower_red = np.array([170,120,50])
     upper_red = np.array([180,255,255])
+    #lower_blue = np.array([120,50,38])
+    #upper_blue = np.array([180,255,255])
     mask2 = cv2.inRange(hsv,lower_red,upper_red)
     # Addition of the two masks to generate the final mask.
     mask = mask1+mask2
